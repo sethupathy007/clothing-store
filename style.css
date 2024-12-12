@@ -1,0 +1,207 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url(./assets/Saree.webp);
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 19vh;
+    /* background-color: rgba(118,87,54,255); */
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(255, 217, 0);
+    padding: 9rem;
+    /* text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00 */
+}
+
+.Boutique{
+    color: #ff0000;font-size: 30px;
+}
+
+.menu{
+    
+    ul{
+        list-style-type: none;
+        list-style: none;
+        display: flex;
+        gap: 2.5rem;
+        padding:1rem;
+        font-size: 20px;
+    }
+    a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+
+    }
+}
+
+.menu ul a:hover{
+  transition-duration: 300ms;
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: black;
+    
+    
+}
+.example{
+    color: bisque;
+}
+.example :hover{
+    scale: 1.1;
+    transition-duration: 500ms;
+}
+
+.card-outlook{
+    width: 200px;
+    border-radius: 10px;
+    background-color:rgb(128,97,64) ;
+    border: 3px solid rgb(255, 217, 0);
+}
+
+.card-outlook :hover{
+    scale: 1.1;
+    transition-duration: 500ms;
+}
+.card-text{
+    text-align: center;
+    color: rgb(255, 217, 0);;
+    button{
+        color:rgb(255, 255, 255) ;
+        background-color: transparent;
+        
+    }
+}
+
+.card-parent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding-left: 70px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+  }
+  
+  .hamburger span {
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu ul {
+    flex-direction: row;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 12vh;
+      right: 0;
+      background-color: rgb(128,97,64);
+      width: 50%;
+      text-align: center;
+      border: 2px solid rgb(255, 0, 0);
+      border-radius: 10px;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        /* background-color: rgba(118,87,54,255); */
+    }
+
+    .logo{
+        font-weight: bold;
+        font-size: 30px;
+        color: rgb(255, 217, 0);
+        padding: 50px;
+        /* text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00 */
+
+            
+        }
+
+        .Boutique{
+            font-size: 16px;
+            color: rgb(255, 0, 0);}
+        body{
+            width: max-content
+        }
+        .card-outlook{
+            width: 200px;
+            border-radius: 10px;
+            background-color:rgb(128,97,64) ;
+            border: 3px solid rgb(255, 217, 0);
+        }
+        
+        .card-outlook :hover{
+            scale: 1.1;
+            transition-duration: 500ms;
+        }
+        .card-text{
+            text-align: center;
+            color: rgb(255, 217, 0);;
+            button{
+                color:rgb(255, 255, 255) ;
+                background-color: transparent;
+                
+            }
+        }
+        
+        .card-parent{
+            display: grid;
+            gap: 10px;
+            align-items: center;
+        }
+
+        body{
+            background-color: rgb(83, 79, 22);
+            background-image: none;
+        }
+    }
+
+      
+
+        
+    
+
+
+
+  
